@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: appli-web-canary
+spec:
+  selector:
+    matchLabels:
+      app: appli-web-n
+  template:
+    metadata:
+      labels:
+        app: appli-web-n
+        track: canary
+        version: 2.0.0
+    spec:
+      containers:
+        - name: appli-web-container
+          image: "us-central1-docker.pkg.dev/ornate-woodland-441008-j1/appli-web/appli-web:2.0.0"
+          ports:
+          - containerPort: 8080
