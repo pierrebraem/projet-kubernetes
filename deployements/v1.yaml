@@ -1,5 +1,4 @@
 apiVersion: apps/v1
-kind:
 metadata:
   name: gke-web
 spec:
