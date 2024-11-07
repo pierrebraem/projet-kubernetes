@@ -3,15 +3,14 @@ kind: Deployment
 metadata:
   name: appli-web-n
 spec:
+  selector:
+    matchLabels:
+      app: appli-web-n
   template:
+    metadata:
+      labels:
+        app: appli-web-n
     spec:
-      selector:
-        matchLabels:
-          app: appli-web-n
-      template:
-        metadata:
-          labels:
-            app: appli-web-n
       containers:
         - name: appli-web-container
           image: "us-central1-docker.pkg.dev/ornate-woodland-441008-j1/appli-web/appli-web:latest"
