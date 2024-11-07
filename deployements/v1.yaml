@@ -1,0 +1,8 @@
+apiVersion: apps/v1
+kind: appliweb-namespace
+metadata:
+  name: appliweb
+spec:
+  containers:
+  - name: appli-web-container
+    image: jeremylivecampus/appli-web
