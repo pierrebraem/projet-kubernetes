@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: appliweb-namespace
 metadata:
-  name: appliweb
+  name: appli-web
 spec:
   template:
     spec:
