@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: appliweb-namespace
 metadata:
-  name: appli-web
+  name: gke-web
 spec:
   template:
     spec:
