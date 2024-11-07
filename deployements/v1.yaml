@@ -3,6 +3,8 @@ kind: appliweb-namespace
 metadata:
   name: appliweb
 spec:
-  containers:
-  - name: appli-web-container
-    image: us-central1-docker.pkg.dev/ornate-woodland-441008-j1/appli-web/appli-web:latest
+  template:
+    spec:
+      containers:
+        - name: appli-web-container
+          image: us-central1-docker.pkg.dev/ornate-woodland-441008-j1/appli-web/appli-web:latest
