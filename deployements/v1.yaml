@@ -5,4 +5,4 @@ metadata:
 spec:
   containers:
   - name: appli-web-container
-    image: jeremylivecampus/appli-web
+    image: us-central1-docker.pkg.dev/ornate-woodland-441008-j1/appli-web/appli-web:latest
