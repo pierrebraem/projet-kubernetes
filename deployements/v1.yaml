@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: appliweb-namespace
+kind:
 metadata:
   name: gke-web
 spec:
