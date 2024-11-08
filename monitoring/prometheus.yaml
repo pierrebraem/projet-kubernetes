@@ -2,10 +2,11 @@ apiVersion: monitoring.googleapis.com/v1alpha1
 kind: PodMonitoring
 metadata:
   name: appli-web-prom
+  namespace: appli-web-n
 spec:
   selector:
     matchLabels:
-      app: appli-web-n
+      app: appli-web
   endpoints:
   - port: metrics
     interval: 30s
