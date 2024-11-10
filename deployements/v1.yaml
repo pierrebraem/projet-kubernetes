@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: appli-web-container
-          image: "us-central1-docker.pkg.dev/ornate-woodland-441008-j1/appli-web/appli-web:latest"
+          image: "us-central1-docker.pkg.dev/ornate-woodland-441008-j1/appli-web/appli-web:2.0.0"
           ports:
             - name: metrics
               containerPort: 8080
